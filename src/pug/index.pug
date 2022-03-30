@@ -29,19 +29,23 @@ html(lang='en')
     body#page-top
 
         // Navigation
-        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top.py-3
+        nav#mainNav.navbar.navbar-expand-lg.fixed-top.py-3
             .container.px-4.px-lg-5
                 a.navbar-brand(href='#page-top') Adam Joel
-                button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                button.nav-item.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto.my-2.my-lg-0
                         li.nav-item
-                            a.nav-link(href='#clips') Clips
-                        li.nav-item
-                            a.nav-link(href='#portfolio') Gallery
+                            a.nav-link(href='#services') What's New
                         li.nav-item
                             a.nav-link(href='#about') About
+                        li.nav-item
+                            a.nav-link(href='#portfolio') Photos
+                        li.nav-item
+                            a.nav-link(href='#clips') Reels
+                        li.nav-item
+                            a.nav-link(href='#contact') Contact
 
         // Masthead
         header.masthead
@@ -82,51 +86,41 @@ html(lang='en')
 
         section#services.page-section.bg-dark
             .container.px-4.px-lg-5.text-white
-                h2.text-center.mt-0 Projects
+                h2.text-center.mt-0 What's New
                 hr.divider
-                .row.gx-4.gx-lg-5
-                    .col-lg-4.col-xs-12.text-center
-                        .mt-5
-                            .mb-2
-                                img.img-fluid(src='assets/img/projects/chimed-notext.png', alt='...')
+                .row.g-0
+                    .col-lg-6.col-sm-12
+                        img.img-fluid(src='assets/img/projects/chimed-notext.png', alt='...')
+                    .col-lg-6.col-sm-12.p-5
                             h3.h4.mb-2 Chicago Med
-                            p.text-muted.mb-0 Find him playing the role of joe shmoe in Chicago Med :)
-                    .col-lg-4.col-xs-12.text-center
-                        .mt-5
-                            .mb-2
-                                img.img-fluid(src='assets/img/projects/chimed-notext.png', alt='...')
-                            h3.h4.mb-2 Chicago Med
-                            p.text-muted.mb-0 Find him playing the role of joe shmoe in Chicago Med :)                   
-                    .col-lg-4.col-xs-12.text-center
-                        .mt-5
-                            .mb-2
-                                img.img-fluid(src='assets/img/projects/chimed-notext.png', alt='...')
-                            h3.h4.mb-2 Chicago Med
-                            p.text-muted.mb-0 Find him playing the role of joe shmoe in Chicago Med :)
+                            p.text-muted.mb-0 Tune in Wednesday, March 9, to see Adam Joel co-starring opposite Nick Gehlfuss on NBC’s hit show Chicago Med. If you miss it live, Episode 715 is also on Hulu and Peacock TV.
 
 
         // About
         section#about.page-section.bg-primary
             .container-fluid.px-5
+                h2.text-center.text-white About
+                hr.divider.divider-light.mb-5
                 .row.g-0
                     .col-lg-6.col-sm-12
-                        img.img-fluid(src='assets/img/story-1.jpg', alt='...')
+                        img.img-fluid(src='assets/img/about-1.jpg', alt='...')
                     .col-lg-6.col-sm-12.p-5
-                        h2.text-white.mt-0.text-center Chicago Land Child!
-                        hr.divider.divider-light
                         p.text-white-75.mb-4
-                            | Raised in the Chicago land which was an awesome experience that exposed me to so many talented people. I've been able to pick up as much as I have from this background.
+                            | Adam Joel believes that the most important role he will ever take on is that of himself. He strives daily to improve his own character, growing and expanding his life experience, so that he may better be of service to the roles he will embody.
+                        p.text-white-75.mb-4
+                            | Actors have the ability to move audiences deeply, ask tough questions, effect change, and free people from concern. Adam’s greatest ambition is to be of service to the world through his acting and storytelling by revealing his raw humanity, discovering himself anew in each project, with each new tribe.
                 .row.g-0
                     .col-lg-6.col-sm-12.p-5
-                        h2.text-white.mt-0.text-center Second City 
-                        hr.divider.divider-light
                         p.text-white-75.mb-4
-                            | Along with being from Chicago, I had to put my time in at Second City and see how I can further my acting experience. This gave me a new level of insight into the industry that was invaluable
+                            | After struggling mightily for many years, Adam became clean and sober in January 2020 and attributes this breakthrough to every achievement he has had since. He’s extremely grateful for another chance at life and for all the support he has received. His mission is to give himself over entirely in order to be of optimal service as a man first and then as an actor.
+
+                        p.text-white-75.mb-4
+                            | After all, as Shakespeare said, “All the world’s a stage, And all the men and women merely players; They have their exits and their entrances; And one man in his time plays many parts…”
                     .col-lg-6.col-sm-12
-                        img.img-fluid(src='assets/img/story-2.jpg', alt='...')
+                        img.img-fluid(src='assets/img/about-2.jpg', alt='...')
                         
  
-        section.bg-dark.pt-3.pb-5
+        section.bg-dark.pt-5.pb-2
             .container.px-4.px-lg-5
                 //- .small.text-center.text-muted
                 //-         i.bi-phone.fs-2.mb-3.text-muted
@@ -139,151 +133,53 @@ html(lang='en')
         #portfolio
             .container-fluid.p-0
                 .row.g-0
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/thumb-1.jpg', title='Adam Joel - The Master')
-                            img.img-fluid(src='assets/img/portfolio/thumb-1.jpg', alt='...')
+                    .col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/collage-1.png', title='Adam Joel - The Master')
+                            img.img-fluid(src='assets/img/portfolio/collage-1.png', alt='...')
                             .portfolio-box-caption
                                 .project-category.text-white-50
                                 .bi-camera.fs-1
                                 .project-name
                                     | Adam Joel
                                 .project-category.text-white-50
-                                    | Badass Role
+                                    | Shots
                                 //- div#product-component-1645229335657
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/thumb-2.jpg', title='Adam Joel - The Master')
-                            img.img-fluid(src='assets/img/portfolio/thumb-2.jpg', alt='...')
+                    .col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/collage-4.png', title='Adam Joel - The Master')
+                            img.img-fluid(src='assets/img/portfolio/collage-4.png', alt='...')
                             .portfolio-box-caption
                                 .project-category.text-white-50
                                 .bi-camera.fs-1
                                 .project-name
                                     | Adam Joel
                                 .project-category.text-white-50
-                                    | Romance Role
+                                    | Shots
                                 //- div#product-component-1645229408364
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/thumb-3.jpg', title='Adam Joel - The Master')
-                            img.img-fluid(src='assets/img/portfolio/thumb-3.jpg', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                .bi-camera.fs-1
-                                .project-name
-                                    |  Adam Joel
-                                .project-category.text-white-50
-                                    | Business Role
-                                //- div#product-component-1645229473435
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/thumb-4.jpg', title='Adam Joel - The Master')
-                            img.img-fluid(src='assets/img/portfolio/thumb-4.jpg', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                .bi-camera.fs-1
-                                .project-name
-                                    |  Adam Joel
-                                .project-category.text-white-50
-                                    | Business Role
-                                //- div#product-component-1645229538017
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/thumb-5.jpg', title='Adam Joel - The Master')
-                            img.img-fluid(src='assets/img/portfolio/thumb-5.jpg', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                .bi-camera.fs-1
-                                .project-name
-                                    |  Adam Joel
-                                .project-category.text-white-50
-                                    | Business Role
-                                //- div#product-component-1645229645498
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/thumb-6.jpg', title='Adam Joel - The Master')
-                            img.img-fluid(src='assets/img/portfolio/thumb-6.jpg', alt='...')
-                            .portfolio-box-caption.p-3
-                                .project-category.text-white-50
-                                .bi-camera.fs-1
-                                .project-name
-                                    |  Adam Joel
-                                .project-category.text-white-50
-                                    | Average Joe Role
-                                //- div#product-component-1645229695263
+                    
  
-        section.bg-dark.pt-3.pb-5
+        section.bg-dark.pt-5.pb-2
             .container.px-4.px-lg-5
                 //- .small.text-center.text-muted
                 //-         i.bi-phone.fs-2.mb-3.text-muted
                 //-         div +1 (555) 123-4567
                 .small.text-center.text-muted.pb-3
                         i.bi-camera-reels-fill.fs-2.mb-3.text-muted
-                        div Clips
+                        div Reels
                     
         // Portfolio
         #clips
             .container-fluid.p-0
                 .row.g-0
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/thumb-1.jpg', title='Adam Joel - The Master')
-                            img.img-fluid(src='assets/img/portfolio/thumb-1.jpg', alt='...')
+                    .col
+                        a.portfolio-box(href='assets/img/reels.jpg', title='Adam Joel - The Master')
+                            img.img-fluid(src='assets/img/reels.jpg', alt='...')
                             .portfolio-box-caption
                                 .project-category.text-white-50
                                 .bi-camera-reels.fs-1
                                 .project-name
                                     | Adam Joel
                                 .project-category.text-white-50
-                                    | Badass Role
-                                //- div#product-component-1645229335657
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/thumb-2.jpg', title='Adam Joel - The Master')
-                            img.img-fluid(src='assets/img/portfolio/thumb-2.jpg', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                .bi-camera-reels.fs-1
-                                .project-name
-                                    | Adam Joel
-                                .project-category.text-white-50
-                                    | Romance Role
-                                //- div#product-component-1645229408364
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/thumb-3.jpg', title='Adam Joel - The Master')
-                            img.img-fluid(src='assets/img/portfolio/thumb-3.jpg', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                .bi-camera-reels.fs-1
-                                .project-name
-                                    |  Adam Joel
-                                .project-category.text-white-50
-                                    | Business Role
-                                //- div#product-component-1645229473435
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/thumb-4.jpg', title='Adam Joel - The Master')
-                            img.img-fluid(src='assets/img/portfolio/thumb-4.jpg', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                .bi-camera-reels.fs-1
-                                .project-name
-                                    |  Adam Joel
-                                .project-category.text-white-50
-                                    | Business Role
-                                //- div#product-component-1645229538017
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/thumb-5.jpg', title='Adam Joel - The Master')
-                            img.img-fluid(src='assets/img/portfolio/thumb-5.jpg', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                .bi-camera-reels.fs-1
-                                .project-name
-                                    |  Adam Joel
-                                .project-category.text-white-50
-                                    | Business Role
-                                //- div#product-component-1645229645498
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/thumb-6.jpg', title='Adam Joel - The Master')
-                            img.img-fluid(src='assets/img/portfolio/thumb-6.jpg', alt='...')
-                            .portfolio-box-caption.p-3
-                                .project-category.text-white-50
-                                .bi-camera-reels.fs-1
-                                .project-name
-                                    |  Adam Joel
-                                .project-category.text-white-50
-                                    | Average Joe Role
+                                    | Reels
 
         // Call to action
         //- section.page-section.bg-dark.text-white
@@ -391,7 +287,7 @@ html(lang='en')
         //-                 div +1 (555) 123-4567
 
         // Footer
-        footer.bg-dark.py-2
+        footer#contact.bg-dark.py-2
             .container.px-4.px-lg-5
                 .small.text-center.text-muted
                         i.bi-phone.fs-2.mb-3.text-muted

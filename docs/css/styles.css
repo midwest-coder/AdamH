@@ -11427,6 +11427,7 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box, #portfolio .container-xxl .portfolio-box, #clips .container-fluid .portfolio-box, #clips .container-sm .portfolio-box, #clips .container-md .portfolio-box, #clips .container-lg .portfolio-box, #clips .container-xl .portfolio-box, #clips .container-xxl .portfolio-box {
   position: relative;
   display: block;
+  margin: 5;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption, #portfolio .container-xxl .portfolio-box .portfolio-box-caption, #clips .container-fluid .portfolio-box .portfolio-box-caption, #clips .container-sm .portfolio-box .portfolio-box-caption, #clips .container-md .portfolio-box .portfolio-box-caption, #clips .container-lg .portfolio-box .portfolio-box-caption, #clips .container-xl .portfolio-box .portfolio-box-caption, #clips .container-xxl .portfolio-box .portfolio-box-caption {
   display: flex;
